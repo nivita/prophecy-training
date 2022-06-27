@@ -1,0 +1,118 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "658",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    }
+  },
+  "connections" : [ {
+    "id" : "xZ_gf-lWa-uoacbvd-2Ps",
+    "source" : "91iFbqnYoQZMqjEDEM9HM$$jnziOLj_hU31Hq_r3HYQW",
+    "sourcePort" : "Fwqnz7PSSrbDuzlfopmD_$$UZq7zeA8_EBo2-6bX7Wew",
+    "target" : "Cakp-zPukbBID6ii2OMqH$$qvzzO3zvsc6vpxKZvt2MI",
+    "targetPort" : "Fnhz5IRZqc6RwBACx7YUS$$9Nb5cnBkmlCvnwZkHj5ka"
+  } ],
+  "processes" : {
+    "Cakp-zPukbBID6ii2OMqH$$qvzzO3zvsc6vpxKZvt2MI" : {
+      "id" : "Cakp-zPukbBID6ii2OMqH$$qvzzO3zvsc6vpxKZvt2MI",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 280,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Fnhz5IRZqc6RwBACx7YUS$$9Nb5cnBkmlCvnwZkHj5ka",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "mI4zDjziu-QVz8Hs445KA$$sppTC-0oIsr09orkeNDBu",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    },
+    "91iFbqnYoQZMqjEDEM9HM$$jnziOLj_hU31Hq_r3HYQW" : {
+      "id" : "91iFbqnYoQZMqjEDEM9HM$$jnziOLj_hU31Hq_r3HYQW",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "farmers_markets",
+        "slug" : "farmers_markets",
+        "x" : 140,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Fwqnz7PSSrbDuzlfopmD_$$UZq7zeA8_EBo2-6bX7Wew",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "1887/datasets/farmers_markets"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

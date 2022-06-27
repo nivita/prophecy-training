@@ -1,0 +1,37 @@
+name: prophecy-training
+description: ''
+version: 0.0.1
+author: vnivita@gmail.com
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/farmers_market_irs:
+    name: farmers_market_irs
+    description: ''
+    author: vnivita@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-27 21:39:21'
+    datasets:
+      inputs:
+      - 1887/datasets/farmers_markets
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/farmers_markets:
+    name: farmers_markets
+    description: ''
+    author: vnivita@gmail.com
+    createdAt: '2022-06-27 21:51:40'
+    physicalDatasets:
+      dev:
+        fabricId: 658
+        datasetType: File
+        description: ''
+        author: vnivita@gmail.com
+        createdAt: '2022-06-27 21:51:40'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
